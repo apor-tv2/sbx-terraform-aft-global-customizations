@@ -1,7 +1,6 @@
 data "aws_ssm_parameter" "aft_account_id" {
   provider = aws.aft-management
   name = "/aft/account/aft-management/account-id"
-  type = "String"
 }
 
 resource "aws_ssm_parameter" "aft_account_id"{
