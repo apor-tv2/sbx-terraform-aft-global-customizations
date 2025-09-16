@@ -1,6 +1,5 @@
 ## Auto generated providers.tf ##
 ## Updated on: {{ timestamp }} ##
-
 provider "aws" {
   region = "{{ provider_region }}"
   alias = "aft-management"
@@ -16,7 +15,7 @@ provider "aws" {
 
 provider "aws" {
   region = "{{ provider_region }}"
-  alias = "{{ provider_region }}"
+  alias = "vended-account"
   assume_role {
     role_arn    = "{{ target_admin_role_arn }}"
   }
